@@ -2,20 +2,6 @@
     <div>
         <div class="album-container">
             <div class="row">
-                <div class="col-12">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#" v-for="genre in list" :key="genre.id"></a>
-                            </li>
-                        </ul>
-                    </div>              
-                </div>
-            </div>
-            <div class="row">
                 <div class="dh-fifth-col" v-for="album in albums" :key="album.title">
                     <AlbumCardComponent :info="album"/>
                 </div>
